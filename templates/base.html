@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% load staticfiles %}
+    <script type="text/javascript"  src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href={% static 'app/css/core.css' %} rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand " href="#">LOGO</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="/news">动态</a></li>
+                <li><a href="/ml">机器学习</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        知识
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/">数据结构</a></li>
+                        <li><a href="#">Linux</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Spark</a></li>
+                        <li><a href="#">Hadoop</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-github"></i>统计学</a></li>
+                        <li><a href="#"><i class="icon-github"></i>矩阵</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Others
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/">题库</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">项目</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-github"></i>Github</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="login">Sign In</a></li>
+                <li><a href="register">Sign Up</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+{% block content %}{% endblock %}
+</body>
+<footer class="footer-nav">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <hr>
+        <span>Copyright © 2018 Com</span>
+        <span><a href="/contact">Contact Us</a> |&nbsp;</span>
+        <span><a href="/about">About Us</a> |&nbsp;</span>
+    </div>
+</footer>
+</html>
