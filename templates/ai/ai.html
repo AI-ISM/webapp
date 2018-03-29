@@ -1,12 +1,29 @@
 {% extends "base/base.html" %}
-{% block title %}机器学习{% endblock %}
+{% block title %}AI{% endblock %}
 {% block content %}
    {% load staticfiles %}
-   <div class="jumbotron" id="ml_jumbotron">
+   <div class="jumbotron" id="ai_jumbotron" style="background:url({% static "img/ai_jumbotron.jpg" %})">
+       <h1 class="myCenter">All IN AI</h1>
+       <h3 class="myCenter">Try your best!</h3>
+       <div class="col-md-offset-2 col-md-8  col-sm-offset-0 col-sm-12">
+           {% for panel in topList %}
+           <div class="col-xs-3 align-left AICard ">
+               <a class="linkCard" href="{{ panel.url }}"  style="background:url({% static  panel.imgUrl %}); ">
+                   <h3 class="cardTitle">
+                       {{ panel.title }}
+                   </h3>
+                   <p class="cardBody">
+                       {{ panel.abstract }}
+                   </p>
+               </a>
+           </div>
+           {% endfor %}
+       </div>
+       <span class="clearfix"></span>
    </div>
    <div class="container">
        <div class="col-sm-3" style="background: #ffffff">
-           {% for item in aiArticleLists %}
+           {% for item in aiArticleList %}
            <div class="linkList">
                <a href="{{ item.url }}" class="linkCard">
                    <h4>{{ item.title }}</h4>
