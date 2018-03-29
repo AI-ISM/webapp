@@ -9,17 +9,18 @@
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href={% static 'app/css/core.css' %} rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href={% static "/favicon.ico" %}/>
 </head>
 <body>
     <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
+        <div class="container-fluid col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10  col-sm-offset-0 col-sm-12">
         <div class="navbar-header">
-            <a class="navbar-brand " href="#">LOGO</a>
+            <a class="navbar-brand " href="/">Brand</a>
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li><a href="/news">动态</a></li>
-                <li><a href="/ml">机器学习</a></li>
+                <li><a href="/article">推文</a></li>
+                <li><a href="/ai">领域</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         知识
@@ -41,7 +42,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Others
+                        项目
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -56,18 +57,17 @@
         </div>
         <div class="navbar-right">
             <ul class="nav navbar-nav">
-                <li><a href="login">Sign In</a></li>
-                <li><a href="register">Sign Up</a></li>
+                <li><a href="/login">Sign In</a></li>
+                <li><a href="/register">Sign Up</a></li>
             </ul>
         </div>
         </div>
     </nav>
 {% block content %}{% endblock %}
 </body>
-<footer class="footer-nav">
-    <div class="col-md-1"></div>
-    <div class="col-md-10">
-        <hr>
+<footer class="footer-nav footer col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10  col-sm-offset-0 col-sm-12">
+    <hr>
+    <div>
         <span>Copyright © 2018 Com</span>
         <span><a href="/contact">Contact Us</a> |&nbsp;</span>
         <span><a href="/about">About Us</a> |&nbsp;</span>

@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}AI{% endblock %}
+{% block content %}
+   <div class="jumbotron">
+       <h1 class="myCenter">All in AI</h1>
+       <h3 class="myCenter">Try your best!</h3>
+       <div class="col-md-offset-2 col-md-8  col-sm-offset-0 col-sm-12">
+           {% for panel in topList %}
+           <a class="col-xs-3 align-left " href="{{ panel.url }}">
+               <div class="panelCard panel" >
+                   <h3 class="panel-body">
+                       {{ panel.title }}
+                   </h3>
+                   <p class="panel-body">
+                       {{ panel.abstract }}
+                   </p>
+               </div>
+           </a>
+           {% endfor %}
+       </div>
+       <span class="clearfix"></span>
+   </div>
+   <div class="container">
+       <div class="col-sm-3" >
+           <div class="panel panel-default">
+               <div class="panel-heading">
+                   <h3 class="panel-title">
+                       简介
+                   </h3>
+               </div>
+               <div class="panel-body">
+                    面板内容
+               </div>
+           </div>
+           <div class="list-group">
+           <a href="#" class="list-group-item">
+               <h4 class="list-group-item-heading">
+                   24*7 支持
+               </h4>
+               <p class="list-group-item-text">
+                   我们提供 24*7 支持。
+               </p>
+           </a>
+        </div>
+       </div>
+       <div class="col-sm-9" style="border-left:solid 1px #f0f0f0">
+       {% for panel in mlAlgoList %}
+           <div class="panel tableCard" >
+               <div class="panel-heading">
+                   {{ panel.title}}
+               </div>
+               <div class="panel-body">
+                   <div class="align-left col-xs-6">
+                       {% for item in panel.list %}
+                       <a href="{{ item.url}}" class="list-group-item">
+                           <h4 class="list-group-item-heading">
+                               {{ item.name }}
+                           </h4>
+                           <p class="list-group-item-text">
+                               {{ item.abstract }}
+                           </p>
+                       </a>
+                       {% endfor %}
+                   </div>
+                   <div class="align-right col-xs-6">
+                       {% for item in panel.list %}
+                       <a href="{{ item.url}}" class="list-group-item">
+                           <h4 class="list-group-item-heading">
+                               {{ item.name }}
+                           </h4>
+                           <p class="list-group-item-text">
+                               {{ item.abstract }}
+                           </p>
+                       </a>
+                       {% endfor %}
+                   </div>
+                   <div class="clearfix"></div>
+               </div>
+           </div>
+       {% endfor %}
+       </div>
+   </div>
+{% endblock %}

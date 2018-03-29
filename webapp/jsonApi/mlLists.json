@@ -1,0 +1,72 @@
+[
+  {
+    "title": "机器学习算法",
+    "list": [
+      {
+        "name": "svm",
+        "url": "/ai/ml/svm",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "knn",
+        "url": "/ai/ml/knn",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "dt",
+        "url": "/ai/ml/decisiontree",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "svm",
+        "url": "/ai/ml/svm",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "knn",
+        "url": "/ai/ml/knn",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "dt",
+        "url": "/ai/ml/decisiontree",
+        "abstract": "this is abstract"
+      }
+    ]
+  },
+  {
+    "title": "数据挖掘",
+    "list": [
+      {
+        "name": "svm",
+        "url": "/ai/ml/svm",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "knn",
+        "url": "/ai/ml/knn",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "dt",
+        "url": "/ai/ml/decisiontree",
+        "abstract": "this is abstract"
+      }
+    ]
+  },
+  {
+    "title": "自然语言处理",
+    "list": [
+      {
+        "name": "svm",
+        "url": "/ai/ml/svm",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "knn",
+        "url": "/ai/ml/knn",
+        "abstract": "this is abstract"
+      }
+    ]
+  }
+]

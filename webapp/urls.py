@@ -14,13 +14,57 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from webapp import view
+from django.urls import path, include
+from webapp.views import home, article, ai, knows, user
+
+home_patterns = ([
+    path('', home.index, name='index'),
+], 'home')
+
+article_patterns = ([
+    path('', article.index, name='index'),
+], 'article')
+
+ai_ml_patterns = ([
+    path('', ai.ml.index),
+    path('svm/', ai.ml.svm),
+    path('knn/', ai.ml.knn),
+], 'machineLearning')
+
+ai_dp_patterns = ([
+    path('', ai.dp.index),
+], 'deepLearning')
+
+ai_dm_patterns = ([
+    path('', ai.dp.index),
+], 'dateMining')
+
+ai_npl_patterns = ([
+    path('', ai.npl.index),
+], 'NPL')
+
+ai_patterns = ([
+    path('', ai.index),
+    path('ml/', include(ai_ml_patterns)),
+    path('dp/', include(ai_dp_patterns)),
+    path('dm/', include(ai_dm_patterns)),
+    path('npl/', include(ai_npl_patterns))
+], 'ai')
+
+knows_patterns = ([
+    path('', knows.index, name='index'),
+], 'knows')
+
+user_patterns = ([
+    path('', user.index, name='index'),
+], 'user')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', view.index),
-    # path('user/', view.user),
-    path('ml/', view.ml),
-    path('news/', view.news),
+    path('', include(home_patterns)),
+    path('article/', include(article_patterns)),
+    path('ai/', include(ai_patterns)),
+    path('knows/', include(knows_patterns)),
+    path('user/', include(user_patterns)),
 ]
+

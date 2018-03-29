@@ -1,0 +1,26 @@
+[
+  {
+    "title": "机器学习",
+    "abstract": "简介",
+    "url": "/ai/ml",
+    "imgUrl": "/img/ml_jumbotron.jpg"
+  },
+  {
+    "title": "深度学习",
+    "abstract": "简介",
+    "url": "/ai/dp",
+    "imgUrl": "/img/dp_jumbotron.jpg"
+  },
+  {
+    "title": "数据挖掘",
+    "abstract": "简介",
+    "url": "/ai/dm",
+    "imgUrl": "/img/dm_jumbotron.jpg"
+  },
+  {
+    "title": "自然语言处理",
+    "abstract": "简介",
+    "url": "/ai/npl",
+    "imgUrl": "/img/nlp_jumbotron.jpg"
+  }
+]

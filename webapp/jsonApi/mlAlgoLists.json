@@ -1,0 +1,72 @@
+[
+  {
+    "title": "监督",
+    "list": [
+      {
+        "name": "svm",
+        "url": "/ai/ml/svm",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "knn",
+        "url": "/ai/ml/knn",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "dt",
+        "url": "/ai/ml/decisiontree",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "svm",
+        "url": "/ai/ml/svm",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "knn",
+        "url": "/ai/ml/knn",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "dt",
+        "url": "/ai/ml/decisiontree",
+        "abstract": "this is abstract"
+      }
+    ]
+  },
+  {
+    "title": "聚类",
+    "list": [
+      {
+        "name": "svm",
+        "url": "/ai/ml/svm",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "knn",
+        "url": "/ai/ml/knn",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "dt",
+        "url": "/ai/ml/decisiontree",
+        "abstract": "this is abstract"
+      }
+    ]
+  },
+  {
+    "title": "强化",
+    "list": [
+      {
+        "name": "svm",
+        "url": "/ai/ml/svm",
+        "abstract": "this is abstract"
+      },
+      {
+        "name": "knn",
+        "url": "/ai/ml/knn",
+        "abstract": "this is abstract"
+      }
+    ]
+  }
+]
