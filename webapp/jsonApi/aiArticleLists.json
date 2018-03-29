@@ -1,47 +1,27 @@
 [
   {
     "title": "title1",
-    "url": "/ai/ml/svm",
+    "url": "/article/1",
     "abstract": "this is abstract"
   },
   {
     "title": "title2",
-    "url": "/ai/ml/knn",
+    "url": "/article/2",
     "abstract": "this is abstract"
   },
   {
     "title": "title3",
-    "url": "/ai/ml/decisiontree",
+    "url": "/article/3",
     "abstract": "this is abstract"
   },
   {
     "title": "title4",
-    "url": "/ai/ml/svm",
+    "url": "/article/4",
     "abstract": "this is abstract"
   },
   {
     "title": "title5",
-    "url": "/ai/ml/knn",
-    "abstract": "this is abstract"
-  },
-  {
-    "title": "title6",
-    "url": "/ai/ml/decisiontree",
-    "abstract": "this is abstract"
-  },
-  {
-    "title": "title7",
-    "url": "/ai/ml/knn",
-    "abstract": "this is abstract"
-  },
-  {
-    "title": "title8",
-    "url": "/ai/ml/decisiontree",
-    "abstract": "this is abstract"
-  },
-  {
-    "title": "title9",
-    "url": "/ai/ml/svm",
+    "url": "/article/5",
     "abstract": "this is abstract"
   }
 ]

@@ -1,5 +1,6 @@
 body{
     background: #F5F8FA!important;
+    /*background: #FAFAFA!important;*/
 }
 .navbar {
     -webkit-border-radius: 0;
@@ -14,10 +15,10 @@ body{
 #ai_jumbotron{
     padding-top: 10px!important;
 }
-#ai_jumbotron > h1{
+#ai_jumbotron > h1, #article_jumbotron > h1{
     color: #ffffff;
 }
-#ai_jumbotron > h3{
+#ai_jumbotron > h3, #article_jumbotron > h3{
     margin-bottom: 40px!important;
     color: #94989B;
 }
@@ -89,15 +90,41 @@ body{
     -moz-transition: All 0.4s ease-in-out;
     -o-transition: All 0.4s ease-in-out;
 }
-.aiCard .linkCard:hover {
+.aiCard .linkCard:hover{
     transform: translate(0, -10px);
     -webkit-transform: translate(0, -10px);
     -moz-transform: translate(0, -10px);
     -o-transform: translate(0, -10px);
     -ms-transform: translate(0, -10px);
+}
+.aiCard .linkCard:hover{
     box-shadow: 0 10px 10px -10px #6DC3FC;
 }
 
 #ml_jumbotron{
-    height: 300px;
+    height: 400px;
+    background: #222222;
+}
+#article_jumbotron{
+    padding-top: 10px!important;
+    background: #222222;
+    height: 400px;
+}
+.articleCard{
+    padding:0px 20px ;
+}
+.articleCard .linkCard{
+    background: #ffffff;
+    box-shadow: 0 10px 10px -10px #cdcdcd;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.articleCard .linkCard:hover{
+    box-shadow: 0 0 30px #cdcdcd;
+}
+.editCard{
+
 }

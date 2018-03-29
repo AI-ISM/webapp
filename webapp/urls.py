@@ -19,10 +19,12 @@ from webapp.views import home, article, ai, knows, user
 
 home_patterns = ([
     path('', home.index, name='index'),
+    path('edit/', article.edit, name='edit'),
 ], 'home')
 
 article_patterns = ([
     path('', article.index, name='index'),
+    path('<int:articleId>/', article.article, name='article'),
 ], 'article')
 
 ai_ml_patterns = ([
@@ -62,6 +64,7 @@ user_patterns = ([
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(home_patterns)),
+    path('article/', include(article_patterns)),
     path('article/', include(article_patterns)),
     path('ai/', include(ai_patterns)),
     path('knows/', include(knows_patterns)),

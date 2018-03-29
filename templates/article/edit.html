@@ -1,0 +1,53 @@
+{% extends "base/base.html" %}
+{% block title %}主页{% endblock %}
+{% block content %}
+{% load staticfiles %}
+<div class="editCard col-sm-offset-2 col-sm-8">
+    <div class="toolbar-container"></div>
+    <div class="editable-container"></div>
+</div>
+<style>
+	.editable-container,
+	.toolbar-container {
+		position: relative;
+		border: 1px solid #ddd;
+		background: #eee;
+	}
+
+	.toolbar-container {
+		padding: 1em;
+	}
+
+	.editable-container {
+		padding: 3em;
+		overflow-y: scroll;
+		max-height: 500px;
+	}
+
+	.editable-container .ck-editor__editable {
+		min-height: 21cm;
+		padding: 2em;
+		border: 1px #D3D3D3 solid;
+		border-radius: var(--ck-border-radius);
+		background: white;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	}
+</style>
+
+<script src="{% static 'js/ckeditor.js' %}"></script>
+<script>
+	const editorData = 'dd';
+
+	DecoupledDocumentEditor.create( editorData, {
+		toolbarContainer: document.querySelector( '.toolbar-container' ),
+		editableContainer: document.querySelector( '.editable-container' )
+	} )
+	.then( editor => {
+		window.editor = editor;
+	} )
+	.catch( err => {
+		console.error( err.stack );
+	} );
+</script>
+
+{% endblock %}

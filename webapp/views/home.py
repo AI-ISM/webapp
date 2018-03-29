@@ -3,6 +3,4 @@ import json
 
 
 def index(request):
-    html = "welcome"
-
-    return render_to_response(html)
+    return render_to_response('home/index.html')
